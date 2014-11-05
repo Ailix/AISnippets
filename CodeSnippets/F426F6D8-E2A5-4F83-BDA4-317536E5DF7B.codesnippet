@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>aistandardsingleton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Singleton
+
+
+// ## : 连接字符串和参数
+#define singleton_h(name) + (instancetype)shared##name;
+
+#if __has_feature(obj_arc)  //ARC
+#define singleton_m(name) \
+static id _instance; \
++ (id)allocWithZone:(struct _NSZone *)zone \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&amp;onceToken, ^{ \
+_instance = [super allocWithZone:zone]; \
+}); \
+return _instance; \
+} \
+\
++ (instancetype)shared##name \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&amp;onceToken, ^{ \
+_instance = [[self alloc] init]; \
+}); \
+return _instance; \
+} \
+\
++ (id)copyWithZone:(struct _NSZone *)zone \
+{ \
+return _instance; \
+}
+
+#else //非ARC
+#define singleton_m(name) \
+static id _instance; \
++ (id)allocWithZone:(struct _NSZone *)zone \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&amp;onceToken, ^{ \
+_instance = [super allocWithZone:zone]; \
+}); \
+return _instance; \
+} \
+\
++ (instancetype)shared##name \
+{ \
+static dispatch_once_t onceToken; \
+dispatch_once(&amp;onceToken, ^{ \
+_instance = [[self alloc] init]; \
+}); \
+return _instance; \
+} \
+\
+- (oneway void)release \
+{ \
+\
+} \
+\
+- (id)autorelease \
+{ \
+return _instance; \
+} \
+\
+- (id)retain \
+{ \
+return _instance; \
+} \
+\
+- (NSUInteger)retainCount \
+{ \
+return 1; \
+} \
+\
++ (id)copyWithZone:(struct _NSZone *)zone \
+{ \
+return _instance; \
+}
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F426F6D8-E2A5-4F83-BDA4-317536E5DF7B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>StandardSingleton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
