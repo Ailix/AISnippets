@@ -9,14 +9,14 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,copy,readonly) NSString *&lt;#name#&gt;;
+	<string>@property (nonatomic,copy) NSString *&lt;#name#&gt;;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>35398740-A9CF-4A34-A77C-5A967943B6E2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>propertyString</string>
+	<string>PropertyString</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

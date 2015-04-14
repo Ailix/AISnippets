@@ -3,31 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>aiviewApperance</string>
+	<string>aiview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - viewApperance
-
-- (void)viewWillAppear:(BOOL)animated{
-    
-    [super viewWillAppear:animated];
-}
-
-
-- (void)viewWillDisappear:(BOOL)animated{
-    
-    [super viewWillDisappear:animated];
-}
+	<string>@property (nonatomic) UIView *&lt;#name#&gt;;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D69003C4-65A7-4D1F-B82B-65A6CED4976A</string>
+	<string>A772D1D6-04A0-4B85-B67B-89D1C9D12B9D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>viewApperance</string>
+	<string>AIView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
