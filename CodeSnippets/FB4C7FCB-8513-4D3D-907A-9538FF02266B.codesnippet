@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>aistring</string>
+	<string>aiarray</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,copy) NSString *&lt;#name#&gt;;
+	<string>@property (nonatomic) NSArray *&lt;#name#&gt;;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>35398740-A9CF-4A34-A77C-5A967943B6E2</string>
+	<string>FB4C7FCB-8513-4D3D-907A-9538FF02266B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>AIString</string>
+	<string>AIArray</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
